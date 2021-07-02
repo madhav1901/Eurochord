@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ChatCord App</title>
+	</head>
+	<body>
+		<div id="progressbar"></div>
+		<div id="scrollPath"></div>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-smile"></i> EuroCord</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+					</div>
+		
+					<button type="submit" class="btn2">Join Chat</button>
+				</form>
+			</main>
+		</div>
+		<div class="images">
+			<img src="images/f2.png">
+			<img src="images/f3.png">
+			<img src="images/f4.png">
+			<img src="images/f5.png">
+			<img src="images/f6.png">
+			<img src="images/f7.png">
+		</div>
+		<script type="text/javascript">
+		Let progress = document.getElementById('progressbar');
+		Let totalHeight = document.body.scrollHeight - window.innerHeight;
+		window.onscroll = function(){
+			Let progressHeight = (window.pageYOffset / totalHeight)*100;
+			progress.style.height = progressHeight + %;
+		}
+		</script>
+	</body>
+</html>
